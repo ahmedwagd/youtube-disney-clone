@@ -1,7 +1,7 @@
 // Main imports
 import { auth, provider } from '../../firebase';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import { selectUserName, selectUserPhoto, setUserLoginDetails } from '../../features/user/userSlice'
 
 // Components& pages
@@ -19,7 +19,7 @@ import {
 
 const Navbar = () => {
   const dispatch = useDispatch();
-  const history = useHistory();
+  // const history = useHistory();
   const userName = useSelector(selectUserName);
   const userPhoto = useSelector(selectUserPhoto);
 

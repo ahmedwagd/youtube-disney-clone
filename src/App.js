@@ -1,10 +1,25 @@
+// Main imports
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+// Components& pages
+import Navbar from './Components/Navbar/Navbar';
+import Login from './Components/Login/Login'
+
+// Styles
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>GOOO Ahmed</h1>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path='/' >
+            <Login />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
